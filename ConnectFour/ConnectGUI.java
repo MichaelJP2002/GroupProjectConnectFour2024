@@ -1,9 +1,10 @@
+package ConnectFour;
+
+import ConnectFour.ConnectFour;
+
 import java.awt.Graphics;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Random;
 
 public class ConnectGUI extends JComponent {
 
@@ -15,7 +16,7 @@ public class ConnectGUI extends JComponent {
     int row = 8;
 
     public ConnectGUI() {
-        this.setPreferredSize(new Dimension(column*ConnectFour.TILE_SIZE, row*ConnectFour.TILE_SIZE));
+        this.setPreferredSize(new Dimension(column* ConnectFour.TILE_SIZE, row*ConnectFour.TILE_SIZE));
     }
 
 
@@ -29,7 +30,7 @@ public class ConnectGUI extends JComponent {
 
 
 
-/*
+
         // Blue Board
         graphics.drawRect(0,0,1000,1000);
         graphics.setColor(new Color(0,125,200));
@@ -48,18 +49,10 @@ public class ConnectGUI extends JComponent {
 
 
 
- */
-        // Place Piece Buttons
 
-        JPanel panel;
-        JButton placePiece;
-        placePiece = new JButton("Place Piece");
-        placePiece.setBounds(50,100,300,300);
-        panel = new JPanel();
-        panel.setBounds(50,100,300,300);
-        panel.setLayout(new GridLayout(4,4,10,10));
-        panel.setBackground(Color.RED);
-        panel.add(placePiece);
+
+
+
 
 
 
@@ -74,7 +67,7 @@ public class ConnectGUI extends JComponent {
                 else {
                     graphics2D.setColor(new Color(0, 0, 0));
                 }
-                graphics2D.fillRect(x * ConnectFour.TILE_SIZE, y * ConnectFour.TILE_SIZE, ConnectFour.TILE_SIZE, ConnectFour.TILE_SIZE);
+                graphics2D.fillRect(x * ConnectFour.ConnectFour.TILE_SIZE, y * ConnectFour.ConnectFour.TILE_SIZE, ConnectFour.ConnectFour.TILE_SIZE, ConnectFour.ConnectFour.TILE_SIZE);
 
 
 
